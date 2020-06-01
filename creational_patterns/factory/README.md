@@ -51,3 +51,20 @@ Here are a few of the things the client wasn't bothered with:
 - Instantiating an object
 
 ## Abstract Factory
+
+An Abstract Factory utilizes a collection of related Factories to instantiate objects. This design pattern encourages a common API between related Factories where method and property names are kept generic and apply to all of the Factories that could be utilized in the Abstract Factory. This common API allows the Abstract Factory to access any methods and properties required to instantiate the requested object, no matter which Factory it is currently dealing with.
+
+Similar to the Factory Method approach, at some point we need to determine what the requested object is. The Factory Method can only determine the requested object (and required Class(es)) internally based on the arguments it received. Abstract Factories can make this same internal determination but they also have access to an additional approach. An Abstract Factory can require a Factory as a parameter (in the form of a method, function, or object) and simply use that Factory to instantiate the desired object.
+
+It is common to start with the Factory Method design pattern and then adapt your code to the Abstract Factory design pattern if you notice a growing number of related Factory Methods in your project.
+
+The `factory_boy` package for Python uses the Abstract Factory design pattern to make testing of Django models easier by adding test-specific properties during runtime that can be examined.
+
+### Advantages
+
+- Offers all of the same advantages of the Factory Method approach.
+- Behavior of your program can be altered dynamically during runtime by specifying which Factory is passed to the Abstract Factory.
+
+### Example
+
+#### Summary
