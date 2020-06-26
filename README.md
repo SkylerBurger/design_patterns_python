@@ -7,7 +7,8 @@ An idisyncratic name for a reusable pattern that solves common software design p
 ## Types of Design Patterns
 
 - Creational Patterns
-  - [Factory](creational_patterns/factory/README.md)
+  - [Builder](https://github.com/SkylerBurger/design_patterns_python/tree/master/creational_patterns/builder)
+  - [Factory](https://github.com/SkylerBurger/design_patterns_python/tree/master/creational_patterns/factory)
 - Structural Patterns
 - Behavioral Patterns
 
